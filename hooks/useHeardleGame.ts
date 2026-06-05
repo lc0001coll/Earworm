@@ -161,6 +161,6 @@ export function buildShareGrid(state: HeardleState): string {
       cells.push("⬛");
     }
   }
-  const header = `Self Heardle ${state.date}`;
+  const header = `Earworm ${state.date}`;
   return `${header}\n${cells.join("")}`;
 }

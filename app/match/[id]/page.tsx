@@ -25,7 +25,7 @@ export default function MatchPage({ params }: MatchPageProps) {
     <main className="mx-auto flex min-h-screen w-full max-w-xl flex-col gap-6 px-4 py-8">
       <header className="flex items-center justify-between">
         <h1 className="text-xl font-bold tracking-tight">
-          {match ? match.name : "Self Heardle Match"}
+          {match ? match.name : "Earworm Match"}
         </h1>
         <div className="flex items-center gap-3 text-xs text-zinc-400">
           <Link href="/" className="hover:text-zinc-200">

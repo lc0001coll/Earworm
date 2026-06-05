@@ -18,7 +18,7 @@ from transformers import ClapModel, ClapProcessor
 MODEL_NAME = "laion/clap-htsat-unfused"
 SAMPLE_RATE = 48000  # CLAP expects 48k
 
-app = FastAPI(title="self-heardle embed-service")
+app = FastAPI(title="earworm embed-service")
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"[embed-service] loading {MODEL_NAME} on {device}...")

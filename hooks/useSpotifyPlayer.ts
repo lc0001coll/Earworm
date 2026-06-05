@@ -133,7 +133,7 @@ export function useSpotifyPlayer({
 
         setStatus("connecting");
         player = new window.Spotify.Player({
-          name: "Self Heardle",
+          name: "Earworm",
           getOAuthToken: (cb) => {
             getAccessToken().then((t) => {
               if (t) cb(t);

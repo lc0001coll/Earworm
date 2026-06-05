@@ -22,7 +22,7 @@ export function Leaderboard({
   );
 
   const summary = useMemo(() => {
-    const lines = [`Self Heardle · ${room.matchName}`];
+    const lines = [`Earworm · ${room.matchName}`];
     ranked.forEach((p, i) => lines.push(`${i + 1}. ${p.name} — ${p.score}`));
     return lines.join("\n");
   }, [ranked, room.matchName]);

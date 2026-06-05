@@ -1,9 +1,10 @@
-# Self Heardle
+# Earworm
 
-A personal, single-player Heardle clone backed by Spotify Premium. Guess the
-daily song from up to six progressively-longer clips (1s → 2s → 4s → 7s → 11s →
-16s), built with Next.js (App Router), TypeScript, Tailwind CSS, and the
-Spotify Web Playback SDK.
+Guess the song from progressively longer clips — an AI-curated, Spotify-powered
+music game with custom matches and live multiplayer. Each round reveals up to six
+growing snippets (1s → 2s → 4s → 7s → 11s → 16s); the sooner you name the track,
+the better you score. Built with Next.js (App Router), TypeScript, Tailwind CSS,
+and the Spotify Web Playback SDK.
 
 ## Features
 
@@ -203,6 +204,7 @@ data/                            // gitignored; produced by embed:playlist + eva
 
 ## Notes / out of scope
 
-- No backend, database, or accounts beyond Spotify OAuth.
-- No multiplayer or leaderboards.
+- No persistent backend or database; the multiplayer relay holds room state in
+  memory only and forgets it when the host disconnects.
+- No accounts beyond Spotify OAuth (and guests need none).
 - Desktop browser only; mobile layout isn't tuned.

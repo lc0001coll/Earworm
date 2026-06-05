@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Self Heardle",
-  description: "A personal Heardle clone powered by Spotify.",
+  title: "Earworm",
+  description:
+    "Guess the song from progressively longer clips — an AI-curated, Spotify-powered music game with custom matches and live multiplayer.",
 };
 
 export default function RootLayout({

@@ -109,7 +109,7 @@ export function buildMatchShareGrid(
   results: RoundResult[],
   attemptsPerRound: number,
 ): string {
-  const lines = [`Self Heardle · ${matchName}`];
+  const lines = [`Earworm · ${matchName}`];
   for (let i = 0; i < results.length; i++) {
     const r = results[i];
     if (!r) continue;

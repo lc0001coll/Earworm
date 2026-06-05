@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/multiplayer-service/node_modules
 /.pnp
 .pnp.*
 .yarn/*
@@ -39,3 +40,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# frontier-lab artifacts
+/data/
+/embed-service/.venv/
+/embed-service/__pycache__/
+.spotify-token.json
